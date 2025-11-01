@@ -1,11 +1,11 @@
-Business Question:
+'Business Question:
 How do discounts affect profitability across regions and product categories?
 SQL Task:
 •   Join Orders and Regions.
 •   Compute correlation between Discount and Profit.
 •   Group by Region and Category.
 •   Flag regions where higher discounts reduce overall profit.'
-
+  
 WITH region_profit AS (
 select c.state AS region,p.category,avg(s.discount) AS avg_discount,
 avg(s.profit) AS avg_profit,
@@ -30,4 +30,3 @@ from region_profit
 SELECT *
 FROM flagged_regions
 ORDER BY region, category;
-
