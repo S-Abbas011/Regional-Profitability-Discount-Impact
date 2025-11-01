@@ -2,7 +2,7 @@
 
 # Project Overview
 
-* This project explores the relationship between discount levels and profit margins using SQL correlation analysis. By grouping data by region (state) and product category, the project highlights where discount strategies are effective — and where they might be hurting profits.
+* This project explores the relationship between discount levels and profit margins using SQL correlation analysis. By grouping data by region (state) and product category,    the project highlights where discount strategies are effective — and where they might be hurting profits.
 
 * The final results are visualized in a dashboard to make insights easy to interpret.
 
@@ -21,7 +21,7 @@ region_profit CTE:
 * ✅ Discount increases profit → Positive correlation
 * ❕ No clear relationship → Neutral correlation
 
-** Final Output:
+# Final Output:
 * Displays Region, Category, Average Discount, Average Profit, Correlation, and Impact Flag.
 * Results sorted by Region and Category.
 
