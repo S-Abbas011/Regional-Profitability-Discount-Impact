@@ -1,0 +1,13 @@
+Regional Profitability & Discount Impact
+Business Question:
+How do discounts affect profitability across regions and product categories?
+SQL Task:
+* Join Orders and Regions.
+* Compute correlation between Discount and Profit.
+* Group by Region and Category.
+* Flag regions where higher discounts reduce overall profit.
+Power BI Visualization:
+* Scatter plot: Discount vs Profit Margin
+* Map visual for Regional Profitability
+* Tooltip for average discount and total sales
+
