@@ -6,26 +6,26 @@
 
 * The final results are visualized in a dashboard to make insights easy to interpret.
 
-# SQL Logic Summary
+## SQL Logic Summary
 
 * The solution is built using CTEs (Common Table Expressions) for clarity and modularity:
 
-# region_profit CTE: 
+## region_profit CTE: 
 * Joins the Sales, Customer, and Product tables.
-# Calculates:
+## Calculates:
 * Average Discount and Profit per region and category.
 * Correlation between Discount and Profit (corr() function).
-# flagged_regions CTE:
+## flagged_regions CTE:
 * Flags regions based on the correlation value:
 * ⚠️ Discount reduces profit → Negative correlation
 * ✅ Discount increases profit → Positive correlation
 * ❕ No clear relationship → Neutral correlation
 
-# Final Output:
+## Final Output:
 * Displays Region, Category, Average Discount, Average Profit, Correlation, and Impact Flag.
 * Results sorted by Region and Category.
 
-# Key Insights
+## Key Insights
 * Identifies regions where discounts harm profitability.
 * Highlights categories where discounts boost sales and profit.
 * Provides data-driven guidance for pricing and promotion strategies.
