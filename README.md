@@ -10,12 +10,12 @@
 
 * The solution is built using CTEs (Common Table Expressions) for clarity and modularity:
 
-region_profit CTE:
+#* region_profit CTE:
 * Joins the Sales, Customer, and Product tables.
 # Calculates:
 * Average Discount and Profit per region and category.
 * Correlation between Discount and Profit (corr() function).
-# flagged_regions CTE:
+#* flagged_regions CTE:
 * Flags regions based on the correlation value:
 * ⚠️ Discount reduces profit → Negative correlation
 * ✅ Discount increases profit → Positive correlation
